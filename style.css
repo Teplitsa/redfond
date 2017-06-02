@@ -1,0 +1,429 @@
+/* 
+	Theme Name: Redfond Theme
+	Theme URI:
+	Version: 1.0
+	Description: Theme for Redfond.ru with Leyka plugin by Teplitsa.
+	Author: Andrey Fateev, Teplitsa
+	License: GNU General Public License version 2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: grt
+	
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+*/
+
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #4d4d4d;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    box-sizing: padding-box;
+}
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.caption-in-page{
+    font-weight: 700;
+    font-family: "PT Serif", serif;
+}
+.birka {
+    color: #ef404e;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+a,a:visited {
+    text-decoration: none;
+    padding-bottom: 1px;
+    color: #155d8a;
+    border-bottom: 1px solid rgba(21,93,138,.25);
+}
+a:hover{color: #0e3e5c; border-bottom: 1px solid rgba(14,62,92,.25);}
+a>h2{
+    display: inline;
+    font-size: 24px;
+    line-height: 32px;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 28px;
+}
+.single-block >h2 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+h4{
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+h6{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+}
+div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.center-pt20{
+    text-align: center;
+    padding-top: 10px;
+}
+.greyback {
+    background-color: #f2f2f2;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.attachment-post-thumbnail {
+    margin-bottom: 10px;
+}
+.meta-nav {
+    display:none !important;
+}
+.more {
+	display:none !important;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 45px;
+    padding-top: 30px;
+    padding-right: 45px;
+    background-color: #ffffff;
+    background-image: url("img/back-redfond.svg");
+    background-repeat: no-repeat;
+    background-size: 1200px 320px;
+}
+.module{
+    width: 340px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+}
+.module2x {
+    width: 710px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+	padding-right: 60px;
+}
+.home-block{
+    margin-bottom: 100px;
+	height: 480px;
+}
+.single-block  {
+	margin-bottom: 100px;
+}
+.likely-holder {
+    text-align: center;
+    padding: 20px;
+}
+.module2x > .likely-holder {
+    text-align: left;
+    padding: 20px;
+    padding-left: 0;
+}
+
+/*header*/
+.back-holder {
+    width: 1200px;
+}
+.header {
+    overflow: hidden;
+}
+.header>div {
+    height: 120px;
+}
+
+/* logo */
+.logo {
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+}
+.logo-keeper{
+    width: 90px;
+    height: 39px;
+    background-image: url("img/logo-redfond.svg");
+    background-repeat: no-repeat;
+    background-size: 90px 39px;
+}
+
+/* menu */
+.main-nav {
+    text-align: center;
+    font-size: 18px;
+}
+.main-nav>ul {
+    margin: 0 auto;
+    padding: 0;
+}
+.main-nav>ul>li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.main-nav>ul>li>a:link{color: #fff; border-bottom: 1px solid rgba(255,255,255,.5);}
+.main-nav>ul>li>a:visited{color: #fff; border-bottom: 1px solid rgba(255,255,255,.5);}
+.main-nav>ul>li>a:hover{color: #000; border-bottom: 1px solid rgba(0,0,0,.5);}
+
+
+.help-button {
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+}
+.help-button>div {
+    width: 85px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+/*content*/
+.content {
+    overflow: hidden;
+}
+.container p {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+.container p:first-of-type {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    color: #000;
+}
+.button {
+    height: 50px;
+    background-color: #ef404e;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 13px;
+}
+.button:hover{background-color: #d93a47}
+.button-label {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.digits{
+    margin-top: 30px;
+    font-size: 62px;
+    font-weight: 700;
+    font-style: italic;
+    color: #000;
+}
+.under-digits {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000;
+}
+.under-payment-form {
+	padding-bottom: 30px;
+}
+/*footer*/
+.footer>div {
+    height: 120px;
+}
+.footer>div>p, .footer>div>div>p {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.footer {
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    margin-left: -45px;
+    margin-right: -45px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-teplica {
+    background-image: url("img/te-st-logo.png");
+    background-size: 57px 73px;
+    background-repeat: no-repeat;
+    padding-left: 63px;
+    padding-right: 60px;
+}
+.footer-redfond {
+    text-align: center;
+    padding-left:  60px;
+    padding-right:  60px;
+}
+
+.footer-fateev {
+    position: relative;
+}
+.footer-fateev>div {
+    width: 145px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+/*leyka*/
+.leyka-scale {
+	border: none !important;
+	padding: 0 !important; 
+}
+.payment-method {
+    padding-left: 30px;
+}
+.leyka-scale-button a, .leyka-tpl-neo #leyka_donation_submit {
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	display: block !important;
+	height: 50px !important;
+    background-color: #ef404e !important;
+    border: none !important;
+    border-radius: 4px !important;
+    text-align: center !important;
+    padding-top: 13px !important;
+	font-size: 20px !important;
+	font-weight: 700 !important;
+	letter-spacing: .03em;
+	color: #fff;
+    font-family: "PT Sans", sans-serif;
+}
+div[id*="leyka_scale_standalone"] {
+    background: #fff none repeat scroll 0 0;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.leyka-scale-button a:hover, .leyka-tpl-neo #leyka_donation_submit:hover {background-color: #d93a47!important; cursor: pointer!important;}
+.leyka-scale-label {
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	color: #ef404e;
+}
+/*payment form*/
+
+.leyka-tpl-neo {
+	border: 1px solid #e6e6e6;
+	box-shadow: none;
+    margin-top: 20px;
+}
+.leyka-tpl-neo .leyka-payment-option.toggled .leyka-toggle-trigger {
+	color: #4d4d4d;
+	border: none;
+    margin: 0;
+    padding: 0;
+}
+.leyka-tpl-neo .leyka-payment-option .leyka-toggle-trigger {
+	font-family: 'PT Sans', sans-serif;
+	text-transform: none;
+	font-size: 16px;
+	line-height: 22px;
+	background-color: #f2f2f2;
+	padding-left: 10px;
+	padding-top: 15px;
+
+}
+#leyka-payment-form.leyka-tpl-neo .leyka-field.amount-selector .donate_amount_flex {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "PT Sans", sans-serif;
+    width: 100%;
+}
+.currency {
+    display: none;
+}
+#leyka-payment-form.leyka-tpl-neo .leyka-field.amount-selector .figure-flex {
+    margin-left: 0;
+}
+.leyka-tpl-neo .currency-variants {
+    flex: none;
+    margin-left: 0;
+    text-align: left;
+}
+
+/*адаптивка*/
+@media (max-width: 600px) {
+    body {
+        background-color: #fff;
+    }
+    .site {
+        width: 100%;
+    }
+    .wrapper {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main-nav {
+        text-align: left;
+    }
+    .main-nav > ul > li:first-of-type{
+        padding-left: 0;
+    }
+    .help-button {
+        display: none;
+    }
+    .footer-teplica{
+        background-image: none;
+        padding-right: 40px;
+        padding-left: 40px;
+        text-align: center;
+    }
+    .footer-fateev > div {
+        position: static;
+        text-align: center;
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .back-holder {
+        width: 100%;
+    }
+    .module {
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .module2x {
+        width: 90%;
+        padding-right: 10px;
+    }
+    .container p:first-of-type {
+        font-size: 2em;
+    }
+    .container p {
+        font-size: 1em;
+    }
+
+}
