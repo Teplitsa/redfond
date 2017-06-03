@@ -13,6 +13,9 @@
 */
 
 
+/*some changes*/
+
+
 body{
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
@@ -31,13 +34,19 @@ p {
 }
 .caption-in-page{
     font-weight: 700;
-    font-family: "PT Serif", serif;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    /*color: #ef404e;*/
+    padding-right: 20px;
 }
 .birka {
     color: #ef404e;
     font-weight: 700;
     padding-bottom: 0;
 }
+.videoWrapper { position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 30px;}
+.youtube-iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 a,a:visited {
     text-decoration: none;
     padding-bottom: 1px;
