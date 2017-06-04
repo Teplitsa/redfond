@@ -77,6 +77,17 @@ h4{
     padding-top: 0;
     padding-bottom: 20px;
 }
+h5{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+}
+
 h6{
     font-size: 36px;
     line-height: 42px;

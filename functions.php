@@ -98,15 +98,6 @@ function grt_front_scripts() {
 		true
 	);
 
-	wp_enqueue_script(
-		'grt-emerge',
-		$theme_dir_url.'/js/emerge.js',
-		$script_dependencies,
-		GRT_VERSION,
-		true
-	);
-
-
 	// Styles
 	$style_dependencies = array();
 
@@ -172,3 +163,10 @@ function my_custom_wp_trim_excerpt($text) {
     }
     return $text;
 }
+
+function _remove_script_version( $src ){
+	$parts = explode( '?', $src );
+	return $parts[0];
+}
+add_filter( 'script_loader_src', '_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', '_remove_script_version', 15, 1 );

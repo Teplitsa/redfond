@@ -19,12 +19,15 @@
 	<meta property="og:image" content="<?php
 		if(get_post_type() == 'page') {echo (get_stylesheet_directory_uri().'/og-image.jpg');}
 		elseif(is_home()) {echo (get_stylesheet_directory_uri().'/og-image.jpg');}
-		else {echo (the_post_thumbnail());}
+		else {echo the_post_thumbnail_url('full');}
 
 	?>"/>
 
 
 	<?php wp_head(); ?>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/emerge.js"></script>
+	<meta name="yandex-verification" content="63719936bde3185b" />
+
 </head>
 	
 <body id="top" <?php body_class(); ?>>
