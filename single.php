@@ -12,7 +12,7 @@ get_header();
 
 		<?php if ( has_post_thumbnail() ) : ?>
 
-			<div class="module single-block">
+			<div class="module single-block emerge">
 				<div class="under-payment-form">
 					<?php the_post_thumbnail() ?>
 					<h2><?php the_title();?></h2>
@@ -283,7 +283,7 @@ get_header();
 
 		<?php endif; ?>
 
-		<div class="module2x">
+		<div class="module2x emerge">
 			<div class="container">
 				<?php the_content(); ?>
 			</div>

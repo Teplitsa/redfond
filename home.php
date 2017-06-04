@@ -12,7 +12,7 @@ get_header(); ?>
         //Start the loop
         $i=0;
         while ( have_posts() ) : the_post();?>
-        <div class="module home-block">
+        <div class="module home-block emerge">
 				<?php the_post_thumbnail() ?>
 				<a href="<?php the_permalink();?>"><h2><?php the_title();?></h2></a>
 				<?php the_excerpt();?>
@@ -35,14 +35,14 @@ get_header(); ?>
         <?php $i++; ?>
         <?php if($i==2) {?>
                 <!-- Миссия -->
-                <div class="module home-block center-pt20">
+                <div class="module home-block center-pt20 emerge">
                     <p class="birka">Миссия «Редфонда»</p>
                     <h6>Сохранить<br>жизни пациентов <nobr>с редкими</nobr> заболеваниями, обеспечив доступность лечения и улучшив диагностику</h6>
                     <p><a href="#">Подробнее о фонде</a></p>
                 </div>
 
                 <!-- Цифры -->
-                <div class="module home-block center-pt20 greyback">
+                <div class="module home-block center-pt20 greyback emerge">
                     <p class="birka">Цифры</p>
                     <p class="digits">7000</p>
                     <p class="under-digits">редких заболеваний известно в мире</p>
@@ -55,7 +55,7 @@ get_header(); ?>
         <?php    }
             if($i==5) {?>
                 <!-- Миссия -->
-                <div class="module home-block center-pt20">
+                <div class="module home-block center-pt20 emerge">
                     <p class="birka">Безопасность</p>
                     <h6>Сбор денег организован совместно <nobr>с Теплицей</nobr> социальных технологий <nobr>и Cloud Payments</nobr></h6>
                     <p><a href="#">Теплица социальных технологий</a></p>

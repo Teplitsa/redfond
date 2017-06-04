@@ -98,6 +98,15 @@ function grt_front_scripts() {
 		true
 	);
 
+	wp_enqueue_script(
+		'grt-emerge',
+		$theme_dir_url.'/js/emerge.js',
+		$script_dependencies,
+		GRT_VERSION,
+		true
+	);
+
+
 	// Styles
 	$style_dependencies = array();
 

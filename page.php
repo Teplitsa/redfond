@@ -12,7 +12,7 @@ get_header();
 
 				<?php if ( has_post_thumbnail() ) : ?>
 
-					<div class="module single-block">
+					<div class="module single-block emerge">
 						<?php the_post_thumbnail() ?>
 						<?php if ( $caption = get_post( get_post_thumbnail_id() )->post_excerpt ) : ?>
     						<p class="caption-in-page"><?php echo $caption; ?></p>
@@ -27,7 +27,7 @@ get_header();
 
 				<?php endif; ?>
 
-				<div class="module2x">
+				<div class="module2x emerge">
 					<div class="container">
 						<?php the_content(); ?>
 					</div>

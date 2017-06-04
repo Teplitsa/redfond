@@ -11,6 +11,18 @@
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
+	<!--open graph-->
+	<meta property="og:url" content="https://<?php echo $_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"] ?>"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>" />
+	<meta property="og:description" content="Платформа для сбора помощи людям с редкими заболеваниями"/>
+	<meta property="og:image" content="<?php
+		if(get_post_type() == 'page') {echo (get_stylesheet_directory_uri().'/og-image.jpg');}
+		elseif(is_home()) {echo (get_stylesheet_directory_uri().'/og-image.jpg');}
+		else {echo (the_post_thumbnail());}
+
+	?>"/>
+
 
 	<?php wp_head(); ?>
 </head>
@@ -21,18 +33,18 @@
 		<div class="header">
 			<a href="<?php bloginfo( 'url' ); ?>">
 				<div class="logo module">
-					<div class="logo-keeper"></div>
-					<p class="logotext">Скорая помощь людям <nobr>с редкими заболеваниями</nobr></p>
+					<div class="logo-keeper emerge"></div>
+					<p class="logotext emerge">Скорая помощь людям <nobr>с редкими заболеваниями</nobr></p>
 				</div>
 			</a>
 			
-			<div class="main-nav module">
+			<div class="main-nav module emerge">
 				<ul>
 					<li><a href="/about/">О фонде</a></li>
 					<li><a href="/report/">Отчеты</a></li>
 					<li><a href="/contact/">Контакты</a></li>
 				</ul>
 			</div>
-			<div class="help-button module"><div><a href="/help/">Попросить <nobr>о помощи</nobr></a></div></div>
+			<div class="help-button module emerge"><div><a href="/help/">Попросить <nobr>о помощи</nobr></a></div></div>
 		</div>
 
