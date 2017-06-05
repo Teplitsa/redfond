@@ -1,7 +1,7 @@
     <div class="footer">
         <div class="footer-teplica module"><p>При поддержке Теплицы социальных технологий</p><a href="https://te-st.ru">te-st.ru</a></div>
-        <div class="footer-redfond module"><p>© Редфонд, 2017</p> <p>Скорая помощь людям <nobr>с редкими заболеваниями</nobr></p><a href="#">hello@redfond.ru</a></div>
-        <div class="footer-fateev module"><div><p>Дизайн и верстка: Андрей Фатеев</p><a href="#">drfateev@gmail.com</a><div</div>
+        <div class="footer-redfond module"><p>© Редфонд, 2017</p> <p>Скорая помощь людям <nobr>с редкими</nobr> заболеваниями</p></div>
+        <div class="footer-fateev module"><div><p>Дизайн и верстка: Андрей Фатеев</p><a href="mailto:drfateev@gmail.com">drfateev@gmail.com</a></div>
     </div>
 </div> <!-- /wrapper -->
 </div> <!-- /site -->
@@ -48,6 +48,5 @@
         ga('send', 'pageview');
 
     </script>
-
 </body>
 </html>

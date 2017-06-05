@@ -13,8 +13,11 @@ get_header(); ?>
         $i=0;
         while ( have_posts() ) : the_post();?>
         <div class="module home-block emerge">
-				<?php the_post_thumbnail() ?>
-				<a href="<?php the_permalink();?>"><h2><?php the_title();?></h2></a>
+                <a href="<?php the_permalink();?>">
+                    <div>
+                        <?php the_post_thumbnail() ?>
+                    </div>
+				<h2><?php the_title();?></h2></a>
 				<?php the_excerpt();?>
 				<?php
 					$campaign = get_post();

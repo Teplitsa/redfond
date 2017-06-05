@@ -303,6 +303,40 @@ get_header();
 
 	<?php do_action('grt_content_bottom');?>
 
+	<!--recommend system-->
+	<div class="module3x">
+		<h2>Другие пациенты</h2>
+	</div>
+		<?php
+		$currentID = get_the_ID();
+		$args = array('post_type' => 'leyka_campaign','post__not_in' => array($currentID));
+		$query = new WP_Query( $args );
+		while ( $query->have_posts() ) : $query->the_post(); ?>
+			<div class="module home-block emerge">
+				<a href="<?php the_permalink();?>">
+					<div>
+						<?php the_post_thumbnail() ?>
+					</div>
+					<h2><?php the_title();?></h2></a>
+				<?php the_excerpt();?>
+				<?php
+				$campaign = get_post();
+				if( !$campaign || $campaign->post_type != Leyka_Campaign_Management::$post_type ) {
+					// Wrong campaign data
+					echo '';
+				}
+				echo "<div id='".esc_attr('leyka_scale_standalone-'.uniqid())."'>".leyka_get_scale($campaign, $a)."</div>";
+
+				?>
+				<div class="leyka-scale-button">
+
+					<a href='<?php echo trailingslashit(get_permalink($campaign->ID)).'#leyka-payment-form';?>' <?php echo $campaign->ID == $current_post->ID ? 'class="leyka-scroll"' : '';?><?php echo $args['embed_mode'] === 1 ? ' target="_blank"' : '';?>>
+						ПОМОЧЬ
+					</a>
+				</div>
+			</div>
+		<?php endwhile; ?>
+
 </div> <!-- /content -->
 
 <?php get_footer(); ?>

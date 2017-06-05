@@ -45,7 +45,7 @@
 				<ul>
 					<li><a href="/about/">О фонде</a></li>
 					<li><a href="/report/">Отчеты</a></li>
-					<li><a href="/contact/">Контакты</a></li>
+					<li><a href="/contacts/">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="help-button module emerge"><div><a href="/help/">Попросить <nobr>о помощи</nobr></a></div></div>

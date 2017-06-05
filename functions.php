@@ -98,15 +98,24 @@ function grt_front_scripts() {
 		true
 	);
 
+	wp_enqueue_script(
+		'grt-active-menu',
+		$theme_dir_url.'/js/active-menu.js',
+		$script_dependencies,
+		GRT_VERSION,
+		true
+	);
+
+
 	// Styles
 	$style_dependencies = array();
 
-	// Google fonts	
+	// Google fonts
 	$google_request = '//fonts.googleapis.com/css?family=PT+Sans:400,500,700,700i&amp;subset=cyrillic,latin';
-	$google_request1 = '//fonts.googleapis.com/css?family=PT+Serif:400,700;subset=cyrillic,latin';
+	//$google_request1 = '//fonts.googleapis.com/css?family=PT+Serif:400,700;subset=cyrillic,latin';
 	wp_enqueue_style(
 		'grt-google-fonts',
-		$google_request, $google_request1,
+		$google_request,
 		$style_dependencies,
 		GRT_VERSION
 	);
