@@ -12,6 +12,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 	<!--open graph-->
+	<meta property="fb:app_id" content="308205752951247"/>
 	<meta property="og:url" content="https://<?php echo $_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"] ?>"/>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>" />
